@@ -1,77 +1,111 @@
-🔧 Sobre este ambiente
+# 📘 Ambiente de Teste & Homologação — Projeto CalmaMente
 
-Este repositório/diretório contém a versão do site destinada aos processos de Teste e Homologação antes da publicação em produção.
-Aqui são validadas funcionalidades, correções, fluxos do usuário e integrações, garantindo que tudo esteja funcionando conforme o esperado.
+Este repositório é dedicado aos ambientes de **Teste** e **Homologação** do projeto **CalmaMente**, uma plataforma focada em saúde e bem-estar digital.  
+Aqui são validados fluxos, funcionalidades, layout e correções antes da liberação para Produção.
 
-🏷 Objetivo
+---
 
-Garantir qualidade e estabilidade das novas funcionalidades.
+## 🌐 Ambientes
+- **Repositório:** https://github.com/equipe-calmamente/site-teste
+- **Site:** https://equipe-calmamente.github.io/site-teste/
 
-Testar melhorias, ajustes de layout e comportamento.
+---
 
-Validar requisitos funcionais e não funcionais.
+🔄 Passo a Passo — Baixar pasta do GitHub e conectar via VS Code + Git Bash
+✅ 1. Baixar o projeto do GitHub
 
-Reduzir riscos antes da liberação para o ambiente de Produção.
+Acesse o repositório no GitHub.
 
-🏗 Ambientes
-🔹 Ambiente de Teste
+Clique no botão Code (verde).
 
-Onde a equipe técnica valida implementações iniciais, correções e experimentos.
+Clique em Download ZIP.
 
-Inclui:
+Extraia o ZIP em uma pasta no computador.
 
-Deploy automático/não automático de branches específicas.
+✅ 2. Abrir o projeto no VS Code
 
-Testes funcionais e exploratórios.
+Abra o VS Code
 
-Logs e depuração ativa.
+Vá em File > Open Folder
 
-🔹 Ambiente de Homologação
+Selecione a pasta extraída do ZIP.
 
-Ambiente intermediário, usado para validação final pelos POs, stakeholders e equipe de QA.
+✅ 3. Abrir o terminal Git Bash dentro do VS Code
 
-Objetivos:
+Aperte: Ctrl + Shift + '
 
-Aprovação da sprint/entrega.
+No terminal, clique na setinha ao lado do nome do terminal
 
-Verificação da experiência do usuário.
+Escolha Select Default Profile → Git Bash
 
-Garantia de que os requisitos foram atendidos.
+Abra um novo terminal:
 
-🚀 Como acessar
++ New Terminal
 
-Ambiente de Teste:
-https://seu-site-teste.com (substituir pela URL real)
+✅ 4. Inicializar o Git dentro da pasta baixada
 
-Ambiente de Homologação:
-https://seu-site-homolog.com (substituir pela URL real)
+(Na pasta que eles baixaram)
 
-🔄 Fluxo de Deploy
+git init
 
-Developer cria branch de feature
+✅ 5. Conectar ao repositório remoto (GitHub)
 
-Merge para develop / test → deploy automático no Ambiente de Teste
+Eles precisam conectar a pasta local ao repositório online:
 
-Após validação, merge para homolog → deploy no Ambiente de Homologação
+git remote add origin https://github.com/usuario/repositorio.git
 
-Após aprovação, merge para main / master → Produção
 
-🧪 Itens validados neste ambiente
+Verificar se conectou:
 
-Funcionalidades principais do site
+git remote -v
 
-Responsividade
+✅ 6. Baixar o conteúdo do repositório remoto (primeira sincronização)
 
-Navegação entre páginas
+Como eles baixaram um ZIP sem histórico, precisam alinhar com o remoto.
 
-Formulários e interações
+Se o repositório remoto já tem commits ANTES deles conectarem, faça:
 
-Design, UI e UX
+git pull origin main --allow-unrelated-histories
 
-API, autenticação e integrações
 
-Performance básica
+ou (dependendo do branch):
 
-Acessibilidade
+git pull origin master --allow-unrelated-histories
 
-Testes básicos de usabilidade
+
+Isso evita conflito por “histórias não relacionadas”.
+
+✅ 7. Fazer alterações e enviar para o GitHub
+
+Depois de editar algo:
+
+git add .
+git commit -m "Atualizações iniciais após conectar"
+git push -u origin main
+
+
+Ou master, dependendo do branch.
+
+📌 Fluxo diário de sincronização
+
+Sempre fazer na ordem:
+
+1️⃣ Baixar alterações do GitHub
+
+git pull
+
+
+2️⃣ Fazer as alterações no código
+3️⃣ Adicionar tudo
+
+git add .
+
+
+4️⃣ Commit
+
+git commit -m "Mensagem"
+
+
+5️⃣ Enviar para o GitHub
+
+git push
