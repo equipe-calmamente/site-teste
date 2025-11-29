@@ -1,0 +1,495 @@
+ /*[GENERAL SETTINGS]*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0 auto;    
+}
+
+ body {
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   min-height: 100vh;
+    background-color: #ECE8FD;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2B3E56;
+} 
+
+p {
+    color: #2B3E56;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1345px;
+}
+
+ /*[NAVIGATION MENU]*/
+
+.container-header {
+    max-width: 1345px;
+}
+
+
+header {
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #ECE8FD;
+  width: 100%;
+  min-width: 600px;
+  margin: 0 auto;
+  position: fixed;
+}
+
+.navegacao{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    gap:30px;
+}
+
+.navegacao img{
+    width: 250px;
+    margin-left: 20px;
+}
+ .navegacao .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+    gap:60px;
+ }
+
+.menu a {
+    color: #2B3E56;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.menu a:hover{
+    color: #8087F2;
+}
+
+.recursos-linha{
+    text-decoration: underline;
+}
+
+ /*[BANNER 1]*/
+
+.banner_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap:50px;
+    max-width: 1870px;
+    height: 480px;
+    min-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px;
+    background-color: #ECE8FD;
+}
+
+.banner_1 .texto {
+    width: 450px;
+    margin-top: 80px;
+     color: #2B3E56;
+}
+
+.banner_1 p {
+    padding: 10px 0;
+}
+
+.banner_1 img {
+    max-width: 100%;
+    width: 450px;
+    margin-top: 20px;
+}
+
+.banner_1 h1 {
+    font-size: 35px;
+}
+
+.containerTextoPrincipal {
+  width: 550px;
+  margin-top: 80px;
+}
+
+.containerTextoPrincipal h1 {
+    font-size: 35px;
+}
+
+
+.containerTextoPrincipal p {
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+ /*[BANNER 2]*/
+
+.banner_2, .banner_3, .banner_4 {
+  margin: 0 auto;
+}
+
+.banner_2 {
+    align-items: center;
+    max-width: 1870px;
+  height: 500px;
+  min-width: 600px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px;
+      background-color: #ECE8FD;
+}
+
+
+.banner_2 .bannerLimiteTamanho {
+  margin-top: 100px;
+}
+
+.bannerLimiteTamanho {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  background-color: #F4F2FF;
+  border-radius: 40px;
+  padding: 16px 126px 30px;
+  gap: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  border: #8087F2 1px solid;
+}
+
+.banner_2 * {
+  margin: 0;
+}
+
+.containerSentimentos {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  margin: 0 auto; 
+  gap: 40px;
+
+}
+
+.sentimentos img{
+  max-width: 100px;
+  margin-left: 10px;
+}
+
+.sentimentos img {
+  max-width: 100px;
+  margin-left: 10px;
+  transition: transform 0.3s ease; /
+  cursor: pointer;
+}
+
+
+.sentimentos img:hover {
+  transform: scale(1.2); 
+}
+
+ /*[BANNER 3]*/
+
+.banner_3 {
+    align-items: center;
+    max-width: 1870px;
+  height: 500px;
+  min-width: 600px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #ECE8FD;
+}
+
+
+.banner_3 img {
+  width: 220px;
+  margin-left: 30px;
+}
+
+.exercicioRespiracao {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 80px;
+  max-width: 1200px;
+
+}
+
+.exercicioRespiracao .respirar {
+  width: 100%;
+}
+
+.containerExerciciosInterativo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  margin: 0 auto;
+  height: 200px;
+  margin-top: 30px;
+}
+
+
+.containerExerciciosInterativo h2 {
+  font-size: 30px;
+}
+
+#barraTempo {
+  height: 4px;
+  border-radius: 40px;
+  width: 600px;
+  height: 20px;
+  background-color: #CECECE;
+  background:#CECECE;
+}
+
+.textoRespiracao {
+  font-size: 25px;
+  font-weight: 400;
+  color: #505050;
+  text-align: left;
+}
+
+#inspirar {
+  margin-left: 85px;
+}
+
+.btnRespiracao {
+  border: none;
+  background-color: #8087F2;
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+}
+
+.banner_4 {
+    max-width: 1870px;
+  height: 700px;
+  min-width: 600px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px;
+    background-color: #ECE8FD;
+}
+
+.bannerLimiteTamanho2 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  background-color: #F4F2FF;
+  border-radius: 40px;
+  padding: 16px 126px 30px;
+  gap: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  border: #8087F2 1px solid;
+}
+
+.bannerLimiteTamanho3 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  height: 450px;
+  background-color: #F4F2FF;
+  border-radius: 40px;
+  gap: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  border: #8087F2 1px solid;
+  align-items: center;
+} 
+.banner_4 h2 {
+  font-size: 25px;
+}
+
+.banner_4 p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+#textoCitacao {
+  word-spacing: 0px;
+  text-align: justify;
+    font-size: 30px;
+}
+
+
+.containerCitacao, .playlist {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 20px 15px;
+  width: 100%;
+  height: 250px;
+  background-color:white;
+  margin: 0 auto;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  border: #8087F2 1px solid;
+  
+}
+
+.containerCitacao h2, p {
+  margin: 0;
+}
+
+.playlist h2, p {
+  margin: 0;
+}
+
+.playlist p {
+  font-size: 20px;
+}
+
+#containerCitacaoAlinhamento {
+  margin-left: 0 auto;
+  height: 300px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#playlistAlinhamento {
+  margin-right: 0 auto;
+    height: 300px;
+  width: 100%;
+    max-width: 500px;
+}
+
+.botoes {
+  display: flex;
+}
+
+.botaoPlayPause {
+  width: 70px;
+
+}
+
+.botoes img {
+  cursor: pointer;
+}
+
+.playlistCapa {
+  width: 150px;
+}
+
+.relaxamente {
+  margin: auto 0
+}
+
+#textoAutorCitacao {
+  text-align: right;
+  font-size: 0.7rem;
+  color: #505050;
+}
+
+.citacaoAudio {
+  display: flex;
+  justify-content: center;
+}
+
+.citacaoAudio button {
+  margin: 0;
+}
+
+.desativa {
+  display: none;
+}
+
+ /*[FOOTER]*/
+
+.footer{
+  background-color: #ECE8FD;
+      max-width: 1920px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #505050;
+    padding-top: 60px;
+    font-family: "Inter", sans-serif;
+   border-bottom: 2px solid #4BA2E9;
+   flex-wrap: nowrap;
+   gap:40px;
+       max-width: 1345px;
+}
+
+.footer-container h3 {
+color: #2B3E56;
+font-size: 18px;
+
+}
+
+.esquerda p {
+max-width: 30ch;
+margin-top: 10px;
+}
+
+
+.direita {
+    display: flex;
+}
+
+.direita a {
+    color: #505050;
+    font-size: 15px;
+}
+
+
+.copy p{
+    color: #505050;
+     font-family: "Inter", sans-serif;
+     padding: 20px;
+     font-size: 14px;
+     text-align: center;
+}
+
+.menuDois li {
+    margin-bottom: 10px;
+}
+
+.final-img{
+    width: 300px;
+}
+
+#botao:hover {
+    background-color:#4BA2E9;
+}
+
+

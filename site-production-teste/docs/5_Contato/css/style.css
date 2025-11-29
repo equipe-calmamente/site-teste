@@ -1,0 +1,443 @@
+ /*[GENERAL SETTINGS]*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0 auto;    
+}
+
+ body {
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   min-height: 100vh;
+    background-color: #ECE8FD;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2B3E56;
+} 
+
+p {
+    color: #2B3E56;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1345px;
+}
+
+ /*[NAVIGATION MENU]*/
+
+.container-header {
+    max-width: 1345px;
+}
+
+
+header {
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #ECE8FD;
+  width: 100%;
+  min-width: 600px;
+  margin: 0 auto;
+  position: fixed;
+
+}
+
+.navegacao{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    gap:30px;
+    
+}
+
+.navegacao img{
+    width: 250px;
+    margin-left: 20px;
+}
+ .navegacao .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+    gap:60px;
+ }
+
+.menu a {
+    color: #2B3E56;
+    font-weight: bold;
+    font-size:15px;
+     font-size: 20px;
+}
+
+.menu a:hover{
+    color: #8087F2;
+}
+
+.contato-linha{
+    text-decoration: underline;
+}
+
+ /*[BANNER 1]*/
+
+.banner_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap:10px;
+    max-width: 1800px;
+    height: 480px;
+    min-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px;
+    background-color: #ECE8FD;
+}
+
+.banner_1 .textos {
+    width: 450px;
+    margin-top: 80px;
+}
+
+.banner_1 p {
+    padding: 10px 0;
+}
+
+.banner_1 img {
+    max-width: 100%;
+    width: 420px;
+    margin-top: 80px;
+}
+
+.banner_1 h1 {
+    font-size: 35px;
+}
+
+button{
+    background-color: #5F67D4;
+    color: white;
+    border-radius: 8px;
+    width: 240px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color:#4BA2E9;
+}
+
+@media (max-width: 600px) {
+  .linha {
+    flex-direction: column;
+  }
+
+  .botao {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+
+.textos {
+     width:650px;
+}
+
+.sessao {
+    background-color: #F4F2FF;
+    padding: 10px;
+     margin-top: 100px;  
+}
+
+
+.banner_2 {
+    max-width: 1800px;
+    height: 700px;
+    min-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px;
+    color: #2B3E56;
+    background-color: #ECE8FD;
+}
+
+.form-container {
+  background-color: #F4F2FF;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+  border: #8087F2 1px solid;
+  margin: 0 auto;
+   margin-top: 50px;
+   margin-bottom: 160px;
+  font-family: "Inter", sans-serif;
+  height: 500px;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+
+.tab {
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background: transparent;
+  color: #1c3654;
+  padding: 10px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+  font-weight: 750;
+  border: 1px solid rgb(210, 181, 233);   
+  border-radius: 40px;       
+
+}
+
+.tab.ativo {
+  background-color: #c9c5ff;
+  border: none;
+  color: #1c3654;
+  font-weight: 750;
+}
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.campo_checkbox{
+  align-items: center;
+  font-size: 12px;
+display: grid;
+grid-template-columns: 0.5fr 2fr;
+
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.campo label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.campo input {
+  height: 30px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.05);
+  transition: 0.2s;
+  width: 100%;
+    color: #1c3654;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #8b86ff;
+  outline: none;
+}
+
+
+textarea {
+  resize: none;
+}
+#novidades {
+  width: 50px;
+  max-width: 100px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+
+.botao {
+  background-color: #8b86ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-end;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #706bff;
+}
+
+
+@media (max-width: 600px) {
+  .linha {
+    flex-direction: column;
+  }
+
+  .botao {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+
+
+
+.footer{
+  background-color: #ECE8FD;
+      max-width: 1920px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #505050;
+    padding-top: 60px;
+    font-family: "Inter", sans-serif;
+   border-bottom: 2px solid #4BA2E9;
+   flex-wrap: nowrap;
+   gap:40px;
+    max-width: 1345px;
+}
+
+.footer-container h3 {
+color: #2B3E56;
+font-size: 18px;
+
+}
+
+.esquerda p {
+max-width: 30ch;
+margin-top: 10px;
+}
+
+
+.direita {
+    display: flex;
+}
+
+.direita a {
+    color: #505050;
+    font-size: 15px;
+}
+
+
+.copy p{
+    color: #505050;
+     font-family: "Inter", sans-serif;
+     padding: 20px;
+     font-size: 14px;
+     text-align: center;
+}
+
+.menuDois li {
+    margin-bottom: 10px;
+}
+
+.final-img{
+    width: 300px;
+}
+
+
+
+.cont {
+    text-align: center;
+    padding: 40px 0;
+  background-color: #ECE8FD;
+  width: 100%;
+    
+}
+
+.cont h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  color: #2B3E56;
+    font-family: "Inter", sans-serif;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+#botao:hover {
+    background-color:#4BA2E9;
+}
