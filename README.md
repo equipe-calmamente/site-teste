@@ -52,7 +52,7 @@ git init
 
 Eles precisam conectar a pasta local ao repositório online:
 
-git remote add origin https://github.com/equipe-calmamente/site-teste/tree/main
+git remote add origin https://github.com/equipe-calmamente/site-teste/
 
 
 Verificar se conectou:
