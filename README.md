@@ -11,7 +11,7 @@ Aqui são validados fluxos, funcionalidades, layout e correções antes da liber
 
 ---
 
-🔄 Passo a Passo — Baixar pasta do GitHub e conectar via VS Code + Git Bash
+# 🔄 Passo a Passo — Baixar pasta do GitHub e conectar via VS Code + Git Bash
 ✅ 1. Baixar o projeto do GitHub
 
 Acesse o repositório no GitHub.
