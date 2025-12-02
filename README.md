@@ -8,6 +8,7 @@ Aqui são validados fluxos, funcionalidades, layout e correções antes da liber
 ## 🌐 Ambientes
 - **Repositório:** https://github.com/equipe-calmamente/site-teste
 - **Site:** https://equipe-calmamente.github.io/site-teste/
+- **Documentos:** https://drive.google.com/drive/folders/1hA7AGv2OqJRglizpF65OyXiYxIpaltiP?usp=drive_link
 
 ---
 
